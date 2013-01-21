@@ -2,4 +2,5 @@
 cd ~
 mkdir .ssh
 cd .ssh
-ssh-keygen -f id_rsa -t rsa -N ''
+read -p "What is your name?" name
+ssh-keygen -f id_rsa -t rsa -N '' -C "CasperJs: $name"
