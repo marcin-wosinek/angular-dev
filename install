@@ -8,7 +8,7 @@ sudo apt-get -y install zsh
 
 # user init
 
-# CasperJs install
+# PhantomJs install
 ## download & extract
 mkdir ~/downloads
 cd ~/downloads
@@ -20,6 +20,13 @@ mv phantomjs-1.8.1-linux-i686 ~/utils/phantomjs
 ## setup in path
 sudo ln -s /home/wosinekm/utils/phantomjs/bin/phantomjs /usr/local/bin/phantomjs
 
-## AddOns
+# AddOns
 sudo apt-get -y install libfreetype6 libfreetype6-dev
 sudo apt-get -y install fontconfig
+
+# CasperJs install
+cd ~/utils
+git clone git://github.com/n1k0/casperjs.git
+cd casperjs
+git checkout tags/1.0.1
+sudo ln -sf `pwd`/bin/casperjs /usr/local/bin/casperjs
