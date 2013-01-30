@@ -5,6 +5,7 @@ sudo apt-get -y install git
 sudo apt-get -y install ssh
 sudo apt-get -y install tmux
 sudo apt-get -y install zsh
+sudo apt-get -y install curl
 
 # user init
 

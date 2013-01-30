@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Yeoman and friends install
+## node.js install
+
+## ruby install
+sudo apt-get -y install ruby1.9.3
+
+# testacular
+
+
+# webstorm install
+## download & extract
+cd ~/downloads
+wget http://download.jetbrains.com/webide/WebStorm-5.0.4.tar.gz
+tar xfz WebStorm-*.tar.gz
+
+## move to install dir
+mkdir ~/utils
+mv WebStorm-121.390 ~/utils/WebStorm
+
+## install java 6
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java6-installer
+
+## AddOns
