@@ -10,6 +10,7 @@ sudo apt-get -y install curl
 # user init
 
 # PhantomJs install
+## TODO make it support 64bit platforms
 ## download & extract
 mkdir ~/downloads
 cd ~/downloads
